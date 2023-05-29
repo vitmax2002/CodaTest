@@ -1,0 +1,39 @@
+
+#spring.datasource.url=jdbc:postgresql://localhost:5432/coda2
+#spring.datasource.username=postgres
+#pring.datasource.password=13047804kl
+
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults=false
+#spring.jpa.show-sql=true
+#spring.jpa.hibernate.ddl-auto=update
+
+
+
+#spring.liquibase.enabled=true
+#spring.application.name=liquibase demo
+#spring.liquibase.change-log=classpath:db/changelog/changelog-master.xml
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/coda2
+    username: postgres
+    password: 13047804kl
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/changelog-master.xml
+
+  application:
+    name: liquibase demo
